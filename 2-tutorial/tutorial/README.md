@@ -1,5 +1,5 @@
 tutorial
-========
+=====
 
 Equivalent example of [Tutorial]
 
@@ -12,26 +12,25 @@ Usage
 
   _e.g. `Custom Phone - 6.0.0 - API 23 - 768x1280`._
 
-2. Open a terminal then do the following:
+2. Open a terminal then paste the following:
+
+  _**NOTE:** For [Zsh] terminal, enter `set -k` to treat `#` as comments._
 
   ``` bash
-  # Go to android directory:
-  $ cd rn-rn/2-tutorial/tutorial
-
-  # Download dependencies:
-  $ re-natal deps
-
-  # Open a terminal then paste the following:
   $ \
-  re-natal use-android-device genymotion
-  re-natal use-figwheel
-  lein figwheel android
+  cd rn-rn/2-tutorial/tutorial           # move to project directory
+  re-natal deps                          # download project dependencies:
+  re-natal use-android-device genymotion # set the host for device type:
+  re-natal use-figwheel                  # generate *.js files for figwheel:
+  lein figwheel android                  # run figwheel on Android device (e.g. Genymotion):
   ```
 
 3. Open a new terminal tab then paste the following:
 
   ``` bash
+  # Deploy the project on Android (e.g. Genymotion):
   $ react-native run-android
   ```
 
 [Tutorial]: https://facebook.github.io/react-native/docs/tutorial.html
+[Zsh]: http://www.zsh.org
