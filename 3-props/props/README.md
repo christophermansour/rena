@@ -1,7 +1,7 @@
-tutorial
+props
 =====
 
-Equivalent example of [Tutorial]
+Equivalent example of [Props]
 
 -------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ Usage
 
   ``` bash
   $ \
-  cd rn-rn/2-tutorial/tutorial           # move to project directory
+  cd rn-rn/2-props/props                 # move to project directory
   re-natal deps                          # download project dependencies:
   re-natal use-android-device genymotion # set the host for device type:
   re-natal use-figwheel                  # generate *.js files for figwheel:
@@ -32,5 +32,5 @@ Usage
   $ react-native run-android
   ```
 
-[Tutorial]: https://facebook.github.io/react-native/docs/tutorial.html
+[Props]: https://facebook.github.io/react-native/docs/props.html
 [Zsh]: http://www.zsh.org
