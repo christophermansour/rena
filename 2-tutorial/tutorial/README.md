@@ -14,10 +14,12 @@ Usage
 
 2. Open a terminal then do the following:
 
-
   ``` bash
   # Go to android directory:
   $ cd rn-rn/2-tutorial/tutorial
+
+  # Download dependencies:
+  $ re-natal deps
 
   # Open a terminal then paste the following:
   $ \

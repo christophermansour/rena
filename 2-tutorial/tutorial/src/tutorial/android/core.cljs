@@ -9,13 +9,9 @@
 (def app-registry (.-AppRegistry ReactNative))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 
-(defn alert [title]
-  (.alert (.-Alert ReactNative) title))
-
 (defn app-root []
   (let [greeting (subscribe [:get-greeting])]
-    (fn []
-      [text @greeting])))
+    [text @greeting]))
 
 (defn init []
   (dispatch-sync [:initialize-db])
