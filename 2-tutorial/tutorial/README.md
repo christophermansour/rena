@@ -19,10 +19,10 @@ Usage
   ``` bash
   $ \
   cd rn-rn/2-tutorial/tutorial           # move to project directory
-  re-natal deps                          # download project dependencies:
-  re-natal use-android-device genymotion # set the host for device type:
-  re-natal use-figwheel                  # generate *.js files for figwheel:
-  lein figwheel android                  # run figwheel on Android device (e.g. Genymotion):
+  re-natal deps                          # download project dependencies
+  re-natal use-android-device genymotion # set the host for device type
+  re-natal use-figwheel                  # generate *.js files for figwheel
+  lein figwheel android                  # run figwheel on Android device (e.g. Genymotion)
   ```
 
 3. Open a new terminal tab then paste the following:
