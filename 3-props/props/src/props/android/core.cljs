@@ -8,6 +8,11 @@
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
 
+;; (defn bananas []
+;;   (let [pic {:uri "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"}]
+;;     [image {:source pic
+;;             :style {:width 193 :height 110}}]))
+
 (defn greeting [name]
   [text "Hello " name "!"])
 
@@ -18,9 +23,7 @@
    [greeting "Valeera"]])
 
 (defn app-root []
-  ;; (let [pic {:uri "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg"}]
-  ;;   [image {:source pic
-  ;;           :style {:width 193 :height 110}}])
+  ;; [bananas]
   [lots-of-greetings])
 
 (defn init []
