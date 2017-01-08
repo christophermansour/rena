@@ -5,8 +5,11 @@
 (def app-registry (.-AppRegistry ReactNative))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 
-(defn app-root []
+(defn hello-world-app []
   [text "Hello world!"])
+
+(defn app-root []
+  [hello-world-app])
 
 (defn init []
   (.registerComponent app-registry "Tutorial" #(r/reactify-component app-root)))
