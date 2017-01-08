@@ -20,4 +20,4 @@ Examples
 [Getting Started]: https://github.com/ejelome/rn-rn/tree/master/1-getting-started
 [Tutorial]: https://github.com/ejelome/rn-rn/tree/master/2-tutorial/tutorial
 [Props]: https://github.com/ejelome/rn-rn/tree/master/3-props/props
-[State]: https://github.com/ejelome/rn-rn/tree/master/3-state/state
+[State]: https://github.com/ejelome/rn-rn/tree/master/4-state/state
