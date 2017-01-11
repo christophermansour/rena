@@ -32,5 +32,5 @@ Usage
   $ react-native run-android
   ```
 
-[Height-And-Width]: https://facebook.github.io/react-native/docs/height-and-width.html
+[Height and Width]: https://facebook.github.io/react-native/docs/height-and-width.html
 [Zsh]: http://www.zsh.org
