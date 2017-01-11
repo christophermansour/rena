@@ -1,7 +1,7 @@
 height-and-width
 ================
 
-Equivalent example of [Height-And-Width]
+Equivalent example of [Height and Width]
 
 -------------------------------------------------------------------------------
 
