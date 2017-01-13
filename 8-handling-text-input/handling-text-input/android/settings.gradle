@@ -1,0 +1,3 @@
+rootProject.name = 'HandlingTextInput'
+
+include ':app'
