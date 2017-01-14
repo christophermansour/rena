@@ -18,6 +18,7 @@ The Basics
 6. [Height and Width]
 7. [Layout with Flexbox]
 8. [Handling Text Input]
+9. [Using a ScrollView]
 
 [React Native]: https://facebook.github.io/react-native/docs/getting-started.html
 [Re-Natal]: https://github.com/drapanjanas/re-natal
@@ -29,3 +30,4 @@ The Basics
 [Height and Width]: https://github.com/ejelome/rn-rn/tree/master/6-height-and-width/height-and-width
 [Layout with Flexbox]: https://github.com/ejelome/rn-rn/tree/master/7-layout-with-flexbox/layout-with-flexbox
 [Handling Text Input]: https://github.com/ejelome/rn-rn/tree/master/8-handling-text-input/handling-text-input
+[Using a ScrollView]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
