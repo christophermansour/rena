@@ -6,7 +6,7 @@
 (def app-registry (.-AppRegistry ReactNative))
 (def view (r/adapt-react-class (.-View ReactNative)))
 
-(defn app-root []
+(defn layout-with-flexbox []
   ;; [view {:style {:flex 1
   ;;                :flex-direction "row"}}
   ;;  [view {:style {:width 50 :height 50 :background-color "powderblue"}}]
@@ -25,6 +25,9 @@
    [view {:style {:width 50 :height 50 :background-color "powderblue"}}]
    [view {:style {:width 50 :height 50 :background-color "skyblue"}}]
    [view {:style {:width 50 :height 50 :background-color "steelblue"}}]])
+
+(defn app-root []
+  [layout-with-flexbox])
 
 (defn init []
   (.registerComponent app-registry "LayoutWithFlexbox" #(r/reactify-component app-root)))
