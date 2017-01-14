@@ -13,12 +13,15 @@
       (js/setTimeout #(swap! show-text not) 1000)
       [text (if @show-text title "")])))
 
-(defn app-root []
+(defn state []
   [view
    [blink "I love blinking"]
    [blink "Yes blinking is so great"]
    [blink "Why did they ever take this out of HTML"]
    [blink "Look at me look at me look at me"]])
+
+(defn app-root []
+  [state])
 
 (defn init []
   (.registerComponent app-registry "State" #(r/reactify-component app-root)))
