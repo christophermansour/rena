@@ -1,7 +1,7 @@
 using-a-scrollview
 ==================
 
-Equivalent example of [Handling Text Input]
+Equivalent example of [Using a ListView]
 
 -------------------------------------------------------------------------------
 
@@ -32,5 +32,5 @@ Usage
   $ react-native run-android
   ```
 
-[Handling Text Input]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
+[Using a ListView]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
 [Zsh]: http://www.zsh.org
