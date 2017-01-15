@@ -1,7 +1,7 @@
 using-a-scrollview
 ==================
 
-Equivalent example of [Using a ListView]
+Equivalent example of [Using a ScrollView]
 
 -------------------------------------------------------------------------------
 
@@ -32,5 +32,5 @@ Usage
   $ react-native run-android
   ```
 
-[Using a ListView]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
+[Using a ScrollView]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
 [Zsh]: http://www.zsh.org
