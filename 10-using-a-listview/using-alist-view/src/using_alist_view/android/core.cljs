@@ -1,33 +1,24 @@
 (ns using-alist-view.android.core
-  (:require [reagent.core :as r :refer [atom]]
-            [re-frame.core :refer [subscribe dispatch dispatch-sync]]
-            [using-alist-view.events]
-            [using-alist-view.subs]))
+  (:require [reagent.core :as r]))
 
 (def ReactNative (js/require "react-native"))
 
 (def app-registry (.-AppRegistry ReactNative))
+(def list-view (r/adapt-react-class (.-ListView ReactNative)))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
-(def image (r/adapt-react-class (.-Image ReactNative)))
-(def touchable-highlight (r/adapt-react-class (.-TouchableHighlight ReactNative)))
 
-(def logo-img (js/require "./images/cljs.png"))
+(def list-view-ds (.-DataSource (.-ListView ReactNative)))
+(def ds (list-view-ds. #js {:rowHasChanged #(not= %1 %2)}))
+(def data-source (.cloneWithRows ds (clj->js ["John", "Joel", "James", "Jimmy", "Jackson", "Jillian", "Julie", "Devin"])))
 
-(defn alert [title]
-      (.alert (.-Alert ReactNative) title))
+(defn list-view-basics []
+  [view {:style {:flex 1 :padding-top 22}}
+   [list-view {:dataSource data-source
+               :render-row #(r/as-element [text %])}]])
 
 (defn app-root []
-  (let [greeting (subscribe [:get-greeting])]
-    (fn []
-      [view {:style {:flex-direction "column" :margin 40 :align-items "center"}}
-       [text {:style {:font-size 30 :font-weight "100" :margin-bottom 20 :text-align "center"}} @greeting]
-       [image {:source logo-img
-               :style  {:width 80 :height 80 :margin-bottom 30}}]
-       [touchable-highlight {:style {:background-color "#999" :padding 10 :border-radius 5}
-                             :on-press #(alert "HELLO!")}
-        [text {:style {:color "white" :text-align "center" :font-weight "bold"}} "press me"]]])))
+  [list-view-basics])
 
 (defn init []
-      (dispatch-sync [:initialize-db])
-      (.registerComponent app-registry "UsingAListView" #(r/reactify-component app-root)))
+  (.registerComponent app-registry "UsingAListView" #(r/reactify-component app-root)))

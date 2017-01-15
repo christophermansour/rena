@@ -1,14 +1,36 @@
-# using-alist-view
+using-a-listview
+================
 
-A Clojure library designed to ... well, that part is up to you.
+Equivalent example of [Using a ListView]
 
-## Usage
+-------------------------------------------------------------------------------
 
-FIXME
+Usage
+-----
 
-## License
+1. Run `Genymotion` and start virtual device
 
-Copyright © 2017 FIXME
+  _e.g. `Custom Phone - 6.0.0 - API 23 - 768x1280`._
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+2. Open a terminal then paste the following:
+
+  _**NOTE:** For [Zsh] terminal, enter `set -k` to treat `#` as comments._
+
+  ``` bash
+  $ \
+  cd rn-rn/10-using-a-listview/using-alist-view # move to project directory
+  re-natal deps                                  # download project dependencies
+  re-natal use-android-device genymotion         # set the host for device type
+  re-natal use-figwheel                          # generate *.js files for figwheel
+  lein figwheel android                          # run figwheel on Android device (e.g. Genymotion)
+  ```
+
+3. Open a new terminal tab then paste the following:
+
+  ``` bash
+  # Deploy the project on Android (e.g. Genymotion):
+  $ react-native run-android
+  ```
+
+[Using a ListView]: https://facebook.github.io/react-native/docs/using-a-listview.html
+[Zsh]: http://www.zsh.org
