@@ -38,6 +38,6 @@ License
 [Height and Width]: https://github.com/ejelome/rn-rn/tree/master/6-height-and-width/height-and-width#height-and-width
 [Layout with Flexbox]: https://github.com/ejelome/rn-rn/tree/master/7-layout-with-flexbox/layout-with-flexbox#layout-with-flexbox
 [Handling Text Input]: https://github.com/ejelome/rn-rn/tree/master/8-handling-text-input/handling-text-input#handling-text-input
-[Using a ScrollView]: https://github.com/ejelome/rn-rn/tree/master/9-using-a-scrollview/using-ascrollview#using-ascrollview
-[Using a ListView]: https://github.com/ejelome/rn-rn/tree/master/9-using-a-listview/using-alistview#using-alistview
+[Using a ScrollView]: https://github.com/ejelome/rn-rn/tree/master/9-using-a-scrollview/using-ascroll-view#using-a-scrollview
+[Using a ListView]: https://github.com/ejelome/rn-rn/tree/master/10-using-a-listview/using-alist-view#using-a-listview
 [MIT]: ./LICENSE.md
