@@ -9,7 +9,7 @@
 (def view (r/adapt-react-class (.-View ReactNative)))
 
 (def list-view-ds (.-DataSource (.-ListView ReactNative)))
-(def ds (list-view-ds. #js {:rowHasChanged #(not= %1 %2)}))
+(def ds (list-view-ds. (clj->js {:rowHasChanged #(not= %1 %2)})))
 (def data-source (.cloneWithRows ds (clj->js ["John", "Joel", "James", "Jimmy", "Jackson", "Jillian", "Julie", "Devin"])))
 
 (defn list-view-basics []
