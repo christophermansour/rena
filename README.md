@@ -20,6 +20,13 @@ The Basics
 8. [Handling Text Input]
 9. [Using a ScrollView]
 
+-------------------------------------------------------------------------------
+
+License
+-------
+
+`rn-rn` is licensed under [MIT].
+
 [React Native]: https://facebook.github.io/react-native/docs/getting-started.html
 [Re-Natal]: https://github.com/drapanjanas/re-natal
 [Getting Started]: https://github.com/ejelome/rn-rn/tree/master/1-getting-started
@@ -31,3 +38,4 @@ The Basics
 [Layout with Flexbox]: https://github.com/ejelome/rn-rn/tree/master/7-layout-with-flexbox/layout-with-flexbox
 [Handling Text Input]: https://github.com/ejelome/rn-rn/tree/master/8-handling-text-input/handling-text-input
 [Using a ScrollView]: https://facebook.github.io/react-native/docs/using-a-scrollview.html
+[MIT]: ./LICENSE.md
