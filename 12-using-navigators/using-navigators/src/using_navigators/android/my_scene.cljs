@@ -4,10 +4,15 @@
 (def ReactNative (js/require "react-native"))
 
 (def app-registry (.-AppRegistry ReactNative))
+
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
-(def navigator (r/adapt-react-class (.-Navigator ReactNative)))
+(def touchable-highlight (r/adapt-react-class (.-TouchableHighlight ReactNative)))
 
-(defn my-scene [title]
+(defn my-scene [props]
   [view
-   [text "Hi! My name is " title]])
+   [text "Current Scene: " (:title props)]
+   [touchable-highlight {:on-press (:on-forward props)}
+    [text "Tap me to load the next scene"]]
+   [touchable-highlight {:on-press (:on-back props)}
+    [text "Tap me to go back"]]])
