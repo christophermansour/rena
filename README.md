@@ -21,6 +21,7 @@ The Basics
 9. [Using a ScrollView]
 10. [Using a ListView]
 11. [Networking]
+12. [Using Navigators]
 
 -------------------------------------------------------------------------------
 
@@ -42,4 +43,5 @@ License
 [Using a ScrollView]: https://github.com/ejelome/rn-rn/tree/master/9-using-a-scrollview/using-ascroll-view#using-a-scrollview
 [Using a ListView]: https://github.com/ejelome/rn-rn/tree/master/10-using-a-listview/using-alist-view#using-a-listview
 [Networking]: https://github.com/ejelome/rn-rn/tree/master/11-networking/networking#networking
+[Using Navigators]: https://github.com/ejelome/rn-rn/tree/master/12-using-navigators/using-navigators#using-navigators
 [MIT]: ./LICENSE.md
