@@ -3,9 +3,10 @@
 
 (def ReactNative (js/require "react-native"))
 
-(def app-registry (.-AppRegistry ReactNative))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
+
+(def app-registry (.-AppRegistry ReactNative))
 
 (defn height-and-width []
   ;; [view
