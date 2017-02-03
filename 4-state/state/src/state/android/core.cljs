@@ -3,14 +3,15 @@
 
 (def ReactNative (js/require "react-native"))
 
-(def app-registry (.-AppRegistry ReactNative))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
+(def app-registry (.-AppRegistry ReactNative))
 
 (defn blink [title]
   (let [show-text (r/atom true)]
     (fn []
-      (js/setTimeout #(swap! show-text not) 1000)
+      (js/setTimeout (fn []
+                       (swap! show-text not)) 1000)
       [text (if @show-text title "")])))
 
 (defn state []

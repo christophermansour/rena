@@ -3,28 +3,26 @@
 
 (def ReactNative (js/require "react-native"))
 
-(def app-registry (.-AppRegistry ReactNative))
-(def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
+(def text (r/adapt-react-class (.-Text ReactNative)))
+(def app-registry (.-AppRegistry ReactNative))
+
+(def styles
+  {:big-blue {:color "blue"
+              :font-weight "bold"
+              :font-size 30}
+   :red {:color "red"}})
 
 (defn lots-of-styles []
   [view
-   [text {:style (get styles :red)} "just red"]
-   [text {:style (get styles :big-blue)} "just bigblue"]
+   [text {:style (:red styles)} "just red"]
+   [text {:style (:big-blue styles)} "just bigblue"]
    [text {:style (merge
-                  (get styles :big-blue)
-                  (get styles :red))} "bigblue, then red"]
+                  (:big-blue styles)
+                  (:red styles))} "bigblue, then red"]
    [text {:style (merge
-                  (get styles :red)
-                  (get styles :big-blue))} "red, then bigblue"]])
-
-(def styles
-  {:big-blue
-   {:color "blue"
-    :font-weight "bold"
-    :font-size 30}
-   :red
-   {:color "red"}})
+                  (:red styles)
+                  (:big-blue styles))} "red, then bigblue"]])
 
 (defn app-root []
   [lots-of-styles])
