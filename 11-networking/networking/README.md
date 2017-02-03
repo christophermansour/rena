@@ -32,5 +32,5 @@ Usage
   $ react-native run-android
   ```
 
-[Networking]: https://facebook.github.io/react-native/docs/networking.html
+[Networking]: https://facebook.github.io/react-native/docs/network.html
 [Zsh]: http://www.zsh.org

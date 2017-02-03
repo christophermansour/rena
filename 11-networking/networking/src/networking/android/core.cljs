@@ -6,7 +6,7 @@
 (def app-registry (.-AppRegistry ReactNative))
 (def text (r/adapt-react-class (.-Text ReactNative)))
 
-(defn app-root []
+(defn networking []
   ;; (js/fetch "https://jsonplaceholder.typicode.com/posts/1")
 
   ;; (->
@@ -20,11 +20,16 @@
 
   (->
    (js/fetch "https://facebook.github.io/react-native/movies.json")
-   (.then #(.json %))
-   (.then #(.-movies %))
-   (.catch #(prn %)))
+   (.then (fn [response]
+            (.json response)))
+   (.then (fn [response-json]
+            (.-movies response-json)))
+   (.catch (fn [error]
+             (prn error)))))
 
-  [text])
+(defn app-root []
+  [networking]
+  [text]) ;; app-root needs to return a component
 
 (defn init []
   (.registerComponent app-registry "Networking" #(r/reactify-component app-root)))
