@@ -4,7 +4,6 @@
 (def ReactNative (js/require "react-native"))
 
 (def text (r/adapt-react-class (.-Text ReactNative)))
-
 (def app-registry (.-AppRegistry ReactNative))
 
 (defn hello-world-app []

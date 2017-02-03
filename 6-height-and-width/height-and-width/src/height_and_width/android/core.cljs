@@ -5,7 +5,6 @@
 
 (def text (r/adapt-react-class (.-Text ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
-
 (def app-registry (.-AppRegistry ReactNative))
 
 (defn height-and-width []

@@ -7,7 +7,6 @@
 (def view (r/adapt-react-class (.-View ReactNative)))
 (def text-input (r/adapt-react-class (.-TextInput ReactNative)))
 (def text (r/adapt-react-class (.-Text ReactNative)))
-
 (def app-registry (.-AppRegistry ReactNative))
 
 (defn pizza-translator []
@@ -17,12 +16,12 @@
        [text-input
         {:style {:height 40}
          :placeholder "Type here to translate!"
-         :on-change-text (fn [_]
-                           (reset! char _))}]
+         :on-change-text (fn [txt]
+                           (reset! char txt))}]
        [text {:style {:padding 10
                       :font-size 42}}
-        (s/join " " (map (fn [_]
-                           (if-not (s/blank? _) "🍕" nil))
+        (s/join " " (map (fn [word]
+                           (if-not (s/blank? word) "🍕" nil))
                          (s/split @char #" ")))]])))
 
 (defn app-root []

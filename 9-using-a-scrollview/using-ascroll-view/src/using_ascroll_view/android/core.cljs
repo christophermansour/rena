@@ -6,7 +6,6 @@
 (def scroll-view (r/adapt-react-class (.-ScrollView ReactNative)))
 (def image (r/adapt-react-class (.-Image ReactNative)))
 (def text (r/adapt-react-class (.-Text ReactNative)))
-
 (def app-registry (.-AppRegistry ReactNative))
 
 (defn using-a-scrollview []

@@ -4,7 +4,6 @@
 (def ReactNative (js/require "react-native"))
 
 (def view (r/adapt-react-class (.-View ReactNative)))
-
 (def app-registry (.-AppRegistry ReactNative))
 
 (defn layout-with-flexbox []
