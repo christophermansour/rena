@@ -4,10 +4,11 @@
 
 (def ReactNative (js/require "react-native"))
 
-(def app-registry (.-AppRegistry ReactNative))
-(def text (r/adapt-react-class (.-Text ReactNative)))
-(def text-input (r/adapt-react-class (.-TextInput ReactNative)))
 (def view (r/adapt-react-class (.-View ReactNative)))
+(def text-input (r/adapt-react-class (.-TextInput ReactNative)))
+(def text (r/adapt-react-class (.-Text ReactNative)))
+
+(def app-registry (.-AppRegistry ReactNative))
 
 (defn pizza-translator []
   (let [char (r/atom nil)]
@@ -16,10 +17,13 @@
        [text-input
         {:style {:height 40}
          :placeholder "Type here to translate!"
-         :on-change-text #(reset! char %)}]
+         :on-change-text (fn [_]
+                           (reset! char _))}]
        [text {:style {:padding 10
                       :font-size 42}}
-        (s/join " " (map #(if-not (s/blank? %) "🍕" nil) (s/split @char #" ")))]])))
+        (s/join " " (map (fn [_]
+                           (if-not (s/blank? _) "🍕" nil))
+                         (s/split @char #" ")))]])))
 
 (defn app-root []
   [pizza-translator])
