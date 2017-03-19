@@ -3,7 +3,7 @@ rn-rn
 
 [React Native] examples in [Re-Natal] form
 
-**NOTE:** _All the examples are only for `android` (sorry, I have no Mac)._
+**NOTE:** _All the examples are only for `android` (sorry, don't have a Mac)._
 
 -------------------------------------------------------------------------------
 
