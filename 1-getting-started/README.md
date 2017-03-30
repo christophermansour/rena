@@ -6,7 +6,7 @@ Getting Started
 3. Download repo:
 
   ``` bash
-  $ git clone https://github.com/ejelome/rn-rn.git
+  $ git clone https://github.com/ejelome/rena.git
   ```
 
 [Install and setup Re-Natal]: https://ejelome.com/install-and-setup-re-natal
