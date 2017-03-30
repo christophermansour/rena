@@ -18,7 +18,7 @@ Usage
 
     ``` bash
     $ \
-    cd rn-rn/8-handling-text-input/handling-text-input/ # move to project directory
+    cd rena/8-handling-text-input/handling-text-input/  # move to project directory
     re-natal deps                                       # download project dependencies
     re-natal use-android-device genymotion              # set the host for device type
     re-natal use-figwheel                               # generate *.js files for figwheel

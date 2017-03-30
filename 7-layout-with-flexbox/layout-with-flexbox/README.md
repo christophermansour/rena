@@ -18,7 +18,7 @@ Usage
 
     ``` bash
     $ \
-    cd rn-rn/7-layout-with-flexbox/layout-with-flexbox/ # move to project directory
+    cd rena/7-layout-with-flexbox/layout-with-flexbox/  # move to project directory
     re-natal deps                                       # download project dependencies
     re-natal use-android-device genymotion              # set the host for device type
     re-natal use-figwheel                               # generate *.js files for figwheel
