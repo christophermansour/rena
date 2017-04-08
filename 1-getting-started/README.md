@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 1. [Install and setup Re-Natal]
-2. [Install and setup clj/cljs environment]
+2. [Install and setup clj/cljs development environment]
 3. Download repo:
 
   ``` bash
@@ -10,4 +10,4 @@ Getting Started
   ```
 
 [Install and setup Re-Natal]: https://ejelome.com/install-and-setup-re-natal
-[Install and setup clj/cljs environment]: https://ejelome.com/install-and-setup-clj-cljs-environment
+[Install and setup clj/cljs development environment]: https://ejelome.com/install-and-setup-clj-cljs-development-environment
