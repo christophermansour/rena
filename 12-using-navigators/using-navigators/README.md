@@ -14,8 +14,6 @@ Usage
 
 2. Open a terminal then paste the following:
 
-    _**NOTE:** For [Zsh] terminal, enter `set -k` to treat `#` as comments._
-
     ``` bash
     $ \
     cd rena/12-using-navigators/using-navigators/  # move to project directory
@@ -33,4 +31,3 @@ Usage
     ```
 
 [Using Navigators]: https://facebook.github.io/react-native/docs/using-navigators.html
-[Zsh]: http://www.zsh.org
