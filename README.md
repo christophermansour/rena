@@ -3,7 +3,7 @@ rena
 
 [React Native] examples in [Re-Natal] form
 
-**NOTE:** _All the examples are only for `android` (sorry, don't have a Mac)._
+**NOTE:** _All current examples are only for `android`._
 
 -------------------------------------------------------------------------------
 

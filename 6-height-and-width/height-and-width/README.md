@@ -14,8 +14,6 @@ Usage
 
 2. Open a terminal then paste the following:
 
-    _**NOTE:** For [Zsh] terminal, enter `set -k` to treat `#` as comments._
-
     ``` bash
     $ \
     cd rena/6-height-and-width/height-and-width/  # move to project directory
@@ -33,4 +31,3 @@ Usage
     ```
 
 [Height and Width]: https://facebook.github.io/react-native/docs/height-and-width.html
-[Zsh]: http://www.zsh.org

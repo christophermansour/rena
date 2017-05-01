@@ -14,8 +14,6 @@ Usage
 
 2. Open a terminal then paste the following:
 
-    _**NOTE:** For [Zsh] terminal, enter `set -k` to treat `#` as comments._
-
     ``` bash
     $ \
     cd rena/4-state/state/                 # move to project directory
@@ -33,4 +31,3 @@ Usage
     ```
 
 [State]: https://facebook.github.io/react-native/docs/state.html
-[Zsh]: http://www.zsh.org
